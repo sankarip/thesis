@@ -3,6 +3,7 @@
 #import all relevant libraries
 #make sure to download all the files off the github and put them in the same folder
 #weights can be downloaded here: https://drive.google.com/drive/folders/11RuLe0ALHT_de5gANapfLnKCLh29aBCl?usp=sharing
+#weights can also be found on box
 #weights must be in the folder the rest of the code is run from
 import numpy as np
 import matplotlib.pyplot as plt
