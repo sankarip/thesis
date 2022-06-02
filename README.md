@@ -48,3 +48,6 @@ To use it, the path to the ground truth data must be properly updated and the ma
 The function will return 2 plots: one that contains all three widths and one that only conatins widths 2 and 3.
 
 # Retraining networks
+I used this notebook to train the YOLO network: https://colab.research.google.com/drive/1zqRb08ljHvIIMR4fgAXeNy1kUtjDU85B?usp=sharing
+I used this notebook to train the mask RCNN: https://colab.research.google.com/github/pysource7/utilities/blob/master/Train_Mask_RCNN_(DEMO).ipynb
+All of the currently labeled data can be found on Box. For data labeling, I like to use https://www.makesense.ai/. To add to the current data sets, start by uploading them to makesense.ai (click 'Actions' then 'Import Images' and 'Import Annotations'). Next, upload the new images you would like to add to the data set and label them. It is important to load the old annotations before making new ones, you won't be able to bring in the old annotations after you start labeling without gettign rid of all the new annotations.
