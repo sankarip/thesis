@@ -3,7 +3,8 @@
 # The main code used for this thesis is in the file 'clean_thesis_code.py'
 This is a cleaned up and commented version of the code used for this project. It's mostly broken into functions that complete various steps of the analysis.
 To use this code you will need to download the maskcrnn utilities that are in this repo. You will also need the weights for the neural networks.
-These can be found on google drive (link at the top of code) or box (https://oregonstate.box.com/s/yrkr0jgkl8ej6gkl65fut4229q7vmhts).
+These can be found on google drive (link at the top of code) or box (https://oregonstate.box.com/s/yrkr0jgkl8ej6gkl65fut4229q7vmhts). 
+Additonally, the file paths in lines 21, 79, 124, and 146 will need to be updated to your local paths for the code to work.
 For more information on the project, consult the thesis.pdf document on box. 
 
 # Recurring variables: imgpath, imglist, and heightlist
