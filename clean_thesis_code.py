@@ -3,7 +3,6 @@
 #import all relevant libraries
 #make sure to download all the files off the github and put them in the same folder
 #weights can be downloaded here: https://drive.google.com/drive/folders/11RuLe0ALHT_de5gANapfLnKCLh29aBCl?usp=sharing
-#weights can also be found on box
 #weights must be in the folder the rest of the code is run from
 import numpy as np
 import matplotlib.pyplot as plt
@@ -149,7 +148,9 @@ def maskSaving():
     for i in range(len(imglist)):
         #get the indice of the tree
         s=imglist[i]
+        #load the image
         image = cv2.imread((glob.glob(img_path[s] + '/*.png'))[0])
+        #get the mask
         r = test_model.detect([image])[0]
         mask = r["masks"][:, :, 0]
         #make it blue
@@ -159,7 +160,7 @@ def maskSaving():
         for cnt in contours:
             cv2.polylines(image, [cnt], True, colors[0], 2)
             img = draw_mask(image, [cnt], colors[0])
-        #comment these lines once you're sure the network and images are loading correctly
+        #comment out these lines once you're sure the network and images are loading correctly
         #just here for debugging. Image window has the indice of the tree in the name
         cv2.imshow("img"+str(s),image)
         cv2.waitKey(0)
