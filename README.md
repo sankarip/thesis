@@ -48,7 +48,7 @@ I did not write these functions. An example of how to use them can be seen in th
 
 # The truthVsEst() function plots the groundtruth values against the estimates.
 To use it, the path to the ground truth data must be properly updated and the maskSaving() function needs to have been used. Additionally, the imglist and imgpath variables must be correct.
-The function will return 2 plots: one that contains all three widths and one that only conatins widths 2 and 3.
+The function will return 2 plots: one that contains all three widths and one that only conatins widths 2 and 3. The function will also print out the total error fro each width method.
 
 # Retraining networks
 I used this notebook to train the YOLO network: https://colab.research.google.com/drive/1zqRb08ljHvIIMR4fgAXeNy1kUtjDU85B?usp=sharing
