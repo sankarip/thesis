@@ -39,7 +39,8 @@ This function returns heatmaps of all of the the images on the image list. Could
 # The function gettreenums(imglist) takes in the image list and returns the number for each tree on it
 This function quickly places the correct tree number in a list that corresponds to the iamges listed on imglist. 
 
-# The function getwidths() has no inputs, but requires the path within the function to be changed to a path to a csv of the trunk widths and requires imglist and imgpath to be defined
+# The function getwidths() 
+No inputs, but requires the path within the function to be changed to a path to a csv of the trunk widths and requires imglist and imgpath to be defined
 An excel file with the trunk widths in it can be downloaded from box. This function quickly pulls the groundtruth data into python.
 
 # getOrientation and drawAxis are used to perform and visualize the PCA analysis
