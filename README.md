@@ -17,7 +17,8 @@ These lists are currently just defined at the top of the code. This is a subopti
 
 # For all of the functions that take in masks, pointclouds, and images, the three need to be corresponding (image from point cloud, mask from image) or the code will not work correctly.
 
-# Generating masks: maskingSaving() function has no inputs, but requires a list of images and pointclouds (imglist and imgpath variables in the code) to be defined
+# Generating masks: maskingSaving() function 
+No inputs, but requires a list of images and pointclouds (imglist and imgpath variables in the code) to be defined
 It takes a long time to run the mask-RCNN on each image anytime you want to access its mask. This function uses imgpath and imglist to generate masks for each image on imglist.
 These masks are saved as numpy variables that can easily be loaded for future use.
 
@@ -30,8 +31,9 @@ There are also various utilities in the code to help with finding widths of mult
 It returns a heatmap of the the mask. This can be helpful for debugging. The code breaks if there are any pixels in the mask that are very far away. 
 The breaking means that the few far pixels will be magenta, while all other pixels are black without much a gradient. The NaN pixels will still be white.
 
-# The function heatmap() has no inputs, but requires a list of images and pointclouds (imglist and imgpath variables in the code) to be defined
-# This is a suboptimal way to structure the code and could be changed
+# The function heatmap() 
+No inputs, but requires a list of images and pointclouds (imglist and imgpath variables in the code) to be defined
+This is a suboptimal way to structure the code and could be changed
 This function returns heatmaps of all of the the images on the image list. Could be updated to save these images instead of displaying them if the user prefered.
 
 # The function gettreenums(imglist) takes in the image list and returns the number for each tree on it
