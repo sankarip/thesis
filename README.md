@@ -28,28 +28,29 @@ This class takes is initialized with the height at which a slice should be taken
 It returns 3 different width values. To get these widths, initialize the class and then use the GetWidth(self) function to add the widths as attributes of the class.
 
 There are also various utilities in the code to help with finding widths of multiple images, etc.
-# The function plotMask(mask, pc, image) takes in a mask, a point cloud, and an image
-It returns a heatmap of the the mask. This can be helpful for debugging. The code breaks if there are any pixels in the mask that are very far away. 
+
+# The function plotMask(mask, pc, image) returns a heat map of a mask
+It takes in a mask, a point cloud, and an image. It returns a heatmap of the the mask. This can be helpful for debugging. The code breaks if there are any pixels in the mask that are very far away. 
 The breaking means that the few far pixels will be magenta, while all other pixels are black without much a gradient. The NaN pixels will still be white.
 
-# The function heatmap() 
+# The function heatmap() returns a bunch of heatmaps for a folder of images
 No inputs, but requires a list of images and pointclouds (imglist and imgpath variables in the code) to be defined
-This is a suboptimal way to structure the code and could be changed
+This is a suboptimal way to structure the code and could be changed.
 This function returns heatmaps of all of the the images on the image list. Could be updated to save these images instead of displaying them if the user prefered.
 
 # The function gettreenums(imglist) takes in the image list and returns the number for each tree on it
 This function quickly places the correct tree number in a list that corresponds to the iamges listed on imglist. 
 
-# The function getwidths() 
+# The function getwidths() pulls the width data into Python from a CSV file
 No inputs, but requires the path within the function to be changed to a path to a csv of the trunk widths and requires imglist and imgpath to be defined
-An excel file with the trunk widths in it can be downloaded from box. This function quickly pulls the groundtruth data into python.
+An excel file with the trunk widths in it can be downloaded from box. 
 
-# getOrientation and drawAxis are used to perform and visualize the PCA analysis
+# The functions getOrientation and drawAxis are used to perform and visualize the PCA analysis
 I did not write these functions. An example of how to use them can be seen in the PCAslice class.
 
 # The truthVsEst() function plots the groundtruth values against the estimates.
 To use it, the path to the ground truth data must be properly updated and the maskSaving() function needs to have been used. Additionally, the imglist and imgpath variables must be correct.
-The function will return 2 plots: one that contains all three widths and one that only conatins widths 2 and 3. The function will also print out the total error fro each width method.
+The function will return 2 plots: one that contains all three widths and one that only conatins widths 2 and 3. The function will also print out the total error for each width method.
 
 # Retraining networks
 I used this notebook to train the YOLO network: https://colab.research.google.com/drive/1zqRb08ljHvIIMR4fgAXeNy1kUtjDU85B?usp=sharing
