@@ -1,4 +1,4 @@
-# Thesis
+# Automated Trunk Diameter Measurement
 # Disclaimer: This code has not been optimized and could be restructured  
 # The main code used for this thesis is in the file 'clean_thesis_code.py'
 This is a cleaned up and commented version of the code used for this project. It's mostly broken into functions that complete various steps of the analysis.
