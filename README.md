@@ -39,7 +39,7 @@ This is a suboptimal way to structure the code and could be changed.
 This function returns heatmaps of all of the the images on the image list. Could be updated to save these images instead of displaying them if the user prefered.
 
 # The function gettreenums(imglist) takes in the image list and returns the number for each tree on it
-This function quickly places the correct tree number in a list that corresponds to the iamges listed on imglist. 
+This function quickly places the correct tree number in a list that corresponds to the images listed on imglist. These are the tree numbers that are assigned in the orchard. This function only works for the current ground truth data set.
 
 # The function getwidths() pulls the width data into Python from a CSV file
 No inputs, but requires the path within the function to be changed to a path to a csv of the trunk widths and requires imglist and imgpath to be defined
@@ -55,4 +55,4 @@ The function will return 2 plots: one that contains all three widths and one tha
 # Retraining networks
 I used this notebook to train the YOLO network: https://colab.research.google.com/drive/1zqRb08ljHvIIMR4fgAXeNy1kUtjDU85B?usp=sharing
 I used this notebook to train the mask RCNN: https://colab.research.google.com/github/pysource7/utilities/blob/master/Train_Mask_RCNN_(DEMO).ipynb
-All of the currently labeled data can be found on Box. For data labeling, I like to use https://www.makesense.ai/. To add to the current data sets, start by uploading them to makesense.ai (click 'Actions' then 'Import Images' and 'Import Annotations'). Next, upload the new images you would like to add to the data set and label them. It is important to load the old annotations before making new ones, you won't be able to bring in the old annotations after you start labeling without gettign rid of all the new annotations.
+All of the currently labeled data can be found on Box. For data labeling, I like to use https://www.makesense.ai/. To add to the current data sets, start by uploading them to makesense.ai (click 'Actions' then 'Import Images' and 'Import Annotations'). Next, upload the new images you would like to add to the data set and label them. It is important to load the old annotations before making new ones, you won't be able to bring in the old annotations after you start labeling without getting rid of all the new annotations.
